@@ -74,6 +74,53 @@
                         <use href="./images/icons.svg#icon-modal-close"></use>
                     </svg>
                 </button>
+
+                <p class="modal-desc">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="modal-form">
+                    <label class="modal-label">
+                        Имя
+                        <input type="text" name="username" class="form-input">
+                        <span class="modal-form-tumb">
+                            <svg class="modal-form-icon">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="phone modal-label">
+                        Телефон
+                        <input type="tel" name="phone-number" class="form-input">
+                        <span class="modal-form-tumb">
+                            <svg class="modal-form-icon">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="modal-label">
+                        Почта
+                        <input type="email" name="mail" class="form-input">
+                        <span class="modal-form-tumb">
+                            <svg class="modal-form-icon">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="modal-label">
+                        Комментарий
+                        <textarea name="comment" class="form-input modal-area" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="modal-label modal-label-agreement">
+                        <input type="checkbox" class="modal-agreement" name="agreement" value="agree">
+                        <span class="checkbox-icon">
+                            <svg class="icon-check">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="modal-agreement-link">Условия договора</a>
+                    </label>
+                    <button type="submit" class="modal-form-btn">Отправить</button>
+                </form>
             </div>
         </div>
 
@@ -443,6 +490,21 @@
                         </a>
                     </li>
                 </ul>
+
+            </div>
+            <div class="footer-form">
+                <form>
+                    <label class="join footer-form-label">
+                        Подпишитесь на рассылку</label>
+                    <input type="email" name="email" class="footer-email" placeholder="E-mail" />
+                    <button type="submit" class="footer-form-btn">Подписаться
+                        <span>
+                            <svg class="footer-btn-icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
