@@ -347,7 +347,7 @@ ul {
     letter-spacing: 0.03em;
 
     color: var(--main-txt-cl);
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .modal-label {
@@ -373,28 +373,28 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    outline: transparent;
 
 }
 
 .form-input:hover,
 .form-input:focus,
-.form-input:hover+.modal-form-tumb>.modal-form-icon,
-.form-input:focus+.modal-form-tumb>.modal-form-icon {
+.form-input:hover+.modal-form-icon,
+.form-input:focus+.modal-form-icon {
     cursor: pointer;
     border-color: var(--select-cl);
     fill: var(--select-cl);
 
 }
 
-.modal-form-tumb {
+
+
+.modal-form-icon {
     position: absolute;
     top: 50%;
     left: 12px;
     pointer-events: none;
-}
 
-.modal-form-icon {
     width: 18px;
     height: 18px;
 
@@ -408,7 +408,8 @@ ul {
     padding: 12px 16px;
     margin-bottom: 20px;
 
-
+    resize: none;
+    outline: transparent;
 }
 
 .modal-label-agreement {
